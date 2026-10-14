@@ -1,0 +1,1305 @@
+
+/* RESQRIDE — Classy Neon Edition */
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  background: #f7f5fc;
+  color: #292039;
+}
+
+.sidebar {
+  width: 250px;
+  min-width: 250px;
+  min-height: 100vh;
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #241533, #342047, #1d1529);
+  color: white;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.brand-icon {
+  padding: 12px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #a78bfa, #f17db8);
+  color: white;
+  box-shadow: 0 4px 18px #a78bfa55;
+}
+
+.brand h2 {
+  color: white;
+  font-size: 21px;
+}
+
+.brand span,
+.nav-label {
+  color: #b9a9cf;
+}
+
+.nav-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: #d1c5e0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background: linear-gradient(100deg, #8b5cf655, #e879b533);
+  color: white;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+}
+
+.protection-badge {
+  padding: 15px;
+  border: 1px solid #ffffff22;
+  border-radius: 12px;
+  background: #ffffff0c;
+  color: #8de3c5;
+}
+
+.protection-badge strong {
+  color: white;
+}
+
+.protection-badge p,
+.version {
+  color: #c0b2d0;
+  font-size: 11px;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  padding: 16px 30px;
+  border-bottom: 1px solid #ece5f4;
+  background: #ffffffdc;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #8b5cf6, #f17db8);
+  color: white;
+}
+
+.page-content {
+  max-width: 1450px;
+  margin: auto;
+  padding: 32px;
+}
+
+.welcome-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.eyebrow {
+  color: #875bdc;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.welcome-row h1 {
+  margin: 10px 0;
+  color: #30203e;
+  font-size: clamp(27px, 3vw, 36px);
+  line-height: 1.3;
+}
+
+.subtitle {
+  color: #92889e;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.date-chip {
+  padding: 12px 15px;
+  border: 1px solid #e9def5;
+  border-radius: 9px;
+  background: white;
+  color: #725b91;
+}
+
+.hero-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  min-height: 270px;
+  margin-bottom: 30px;
+  padding: 35px;
+  overflow: hidden;
+  border: 1px solid #ffffff40;
+  border-radius: 19px;
+  background:
+    radial-gradient(circle at 85% 10%, #f17db877, transparent 32%),
+    radial-gradient(circle at 65% 100%, #a78bfa77, transparent 38%),
+    linear-gradient(120deg, #261536, #583574 60%, #8057a8);
+  color: white;
+  box-shadow: 0 15px 35px #3c22501b;
+}
+
+.hero-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-tag {
+  display: inline-block;
+  padding: 8px 11px;
+  border: 1px solid #ffffff44;
+  border-radius: 7px;
+  background: #ffffff15;
+  color: #e6d9ff;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.hero-copy h2 {
+  margin: 18px 0 12px;
+  color: white;
+  font-size: clamp(25px, 3vw, 35px);
+  line-height: 1.35;
+}
+
+.hero-copy p {
+  max-width: 440px;
+  color: #e1d4eb;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.hero-button {
+  padding: 12px 17px;
+  border: 0;
+  border-radius: 9px;
+  background: white;
+  color: #6945b0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background: #eee6ff;
+  transform: translateY(-2px);
+}
+
+.hero-art {
+  display: grid;
+  place-items: center;
+  flex: 0 0 200px;
+  min-height: 190px;
+}
+
+.hero-shield {
+  display: grid;
+  place-items: center;
+  width: 110px;
+  height: 110px;
+  border: 1px solid #ffffff66;
+  border-radius: 30px;
+  background: #ffffff20;
+  color: white;
+  box-shadow: 0 0 35px #c4a6ff55;
+  transform: rotate(-6deg);
+}
+
+.orbit {
+  position: absolute;
+  border: 1px solid #ffffff40;
+  border-radius: 50%;
+}
+
+.orbit-one {
+  width: 175px;
+  height: 175px;
+}
+
+.orbit-two {
+  width: 135px;
+  height: 135px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 28px 0 17px;
+}
+
+.section-heading h2,
+.panel-heading h2 {
+  color: #362442;
+  font-size: 16px;
+}
+
+.demo-label {
+  padding: 7px 10px;
+  border-radius: 7px;
+  background: #eee7ff;
+  color: #7952ce;
+  font-size: 10px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.stat-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #ebe4f2;
+  border-top: 4px solid #a78bfa;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 5px 20px #38204408;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.stat-card:nth-child(2) {
+  border-top-color: #74d7b8;
+  background: linear-gradient(150deg, white, #f1fcf7);
+}
+
+.stat-card:nth-child(3) {
+  border-top-color: #e8c88c;
+  background: linear-gradient(150deg, white, #fffaf1);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px #38204413;
+}
+
+.stat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+}
+
+.stat-icon.purple {
+  background: #eee7ff;
+  color: #8058db;
+}
+
+.stat-icon.green {
+  background: #e0f8ed;
+  color: #239e77;
+}
+
+.stat-icon.orange {
+  background: #fff0d9;
+  color: #b97c32;
+}
+
+.stat-caption {
+  color: #978da3;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.stat-card h3 {
+  margin: 18px 0 8px;
+  color: #30213e;
+  font-size: 28px;
+}
+
+.stat-card p {
+  color: #958ba1;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.positive {
+  padding: 4px 7px;
+  border-radius: 5px;
+  background: #e0f8ed;
+  color: #20855f;
+}
+
+.lower-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.panel {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #ebe4f2;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 5px 20px #38204408;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.panel-heading p {
+  color: #968ba3;
+  font-size: 11px;
+}
+
+.status-pill {
+  padding: 8px 10px;
+  border-radius: 7px;
+  background: #e4f9ef;
+  color: #248562;
+  font-size: 10px;
+}
+
+.map-preview {
+  position: relative;
+  width: 100%;
+  min-height: 175px;
+  overflow: hidden;
+  border: 1px solid #e2d8f2;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #eae4ff, #dff7ef);
+}
+
+.map-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#9177c522 1px, transparent 1px),
+    linear-gradient(90deg, #9177c522 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.map-marker {
+  color: #8258dc;
+  filter: drop-shadow(0 3px 5px #8258dc55);
+}
+
+.map-label {
+  padding: 7px 10px;
+  border: 1px solid #e5d9f7;
+  border-radius: 7px;
+  background: white;
+  color: #7954c1;
+  font-size: 10px;
+}
+
+.ride-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding-top: 18px;
+}
+
+.ride-details small,
+.ride-details strong {
+  display: block;
+}
+
+.ride-details small {
+  color: #9c91aa;
+  font-size: 10px;
+}
+
+.ride-details strong {
+  margin-top: 5px;
+  color: #493651;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.safety-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #d2eee2;
+  border-radius: 11px;
+  background: #effbf5;
+  color: #299b75;
+}
+
+.safety-notice strong {
+  color: #317d64;
+  font-size: 12px;
+}
+
+.safety-notice p {
+  color: #77998a;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.action-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px 0;
+  border-bottom: 1px solid #f0eaf4;
+}
+
+.action-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: #eee7ff;
+  color: #8058db;
+}
+
+.action-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.action-copy strong,
+.action-copy span {
+  display: block;
+}
+
+.action-copy strong {
+  color: #493651;
+  font-size: 12px;
+}
+
+.action-copy span {
+  margin-top: 5px;
+  color: #9a90a6;
+  font-size: 10px;
+}
+
+.action-check {
+  color: #38ad87;
+}
+
+.sos-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 18px;
+  padding: 13px;
+  border: 1px solid #f1b7c9;
+  border-radius: 10px;
+  background: linear-gradient(100deg, #e65383, #ef83a5);
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 5px 16px #e653831c;
+}
+
+.sos-button:hover {
+  filter: brightness(.97);
+  transform: translateY(-2px);
+}
+
+.sos-button.sos-confirmed {
+  background: #e9c47f;
+  color: #573c18;
+}
+
+.sos-note {
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff5e4;
+  color: #a77a38;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 10px 0;
+  color: #9a90a6;
+  font-size: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .sidebar {
+    width: 215px;
+    min-width: 215px;
+  }
+
+  .page-content {
+    padding: 25px 20px;
+  }
+
+  .lower-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-art {
+    flex-basis: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
+
+  .topbar {
+    padding: 15px;
+  }
+
+  .page-content {
+    padding: 20px 14px;
+  }
+
+  .welcome-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-card {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .hero-art {
+    display: none;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ride-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-shield {
+    animation: shield-float 4s ease-in-out infinite;
+  }
+
+  @keyframes shield-float {
+    0%, 100% { transform: translateY(0) rotate(-6deg); }
+    50% { transform: translateY(-5px) rotate(-2deg); }
+  }
+}
+/* ResQRide Emergency Countdown */
+.sos-timer {
+  margin-top: 20px;
+  padding: 24px;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 20px;
+  background: linear-gradient(135deg, #fff1f2, #ffffff);
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(239, 68, 68, 0.08);
+}
+
+.sos-timer h3 {
+  margin: 0 0 12px;
+  color: #991b1b;
+  font-size: 18px;
+}
+
+.timer-display {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #dc2626;
+  font-variant-numeric: tabular-nums;
+}
+
+.sos-timer p {
+  margin: 10px 0 0;
+  color: #7f1d1d;
+  font-size: 13px;
+}
+
+.sos-message {
+  margin-top: 16px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: #f3e8ff;
+  color: #6b21a8;
+  font-weight: 600;
+}
+
+.warning-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #b91c1c;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.warning-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ef4444;
+  box-shadow: 0 0 12px #ef4444;
+  animation: warning-pulse 1s infinite;
+}
+
+.safe-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 17px;
+  border: none;
+  border-radius: 14px;
+  background: #087f5b;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.safe-button:hover {
+  background: #066b4d;
+  transform: translateY(-2px);
+}
+
+.demo-note {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+@keyframes warning-pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+/* Full-screen ResQRide emergency warning */
+.crash-alert-active {
+  position: relative;
+  isolation: isolate;
+}
+
+.crash-alert-active::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  border: 8px solid #ff2020;
+  box-shadow: inset 0 0 65px rgba(255, 0, 0, 0.48);
+  animation: emergency-flash 0.8s steps(2, end) infinite;
+}
+
+.crash-alert-active .sos-timer {
+  position: relative;
+  z-index: 10000;
+  border: 2px solid #ff2020;
+  background: #fff0f0;
+  box-shadow: 0 0 32px rgba(255, 0, 0, 0.35);
+  animation: emergency-card-pulse 0.8s ease-in-out infinite alternate;
+}
+
+.crash-alert-active .timer-display {
+  color: #dc0000;
+  text-shadow: 0 0 18px rgba(255, 0, 0, 0.3);
+}
+
+.crash-alert-active .sos-button {
+  background: #d60000;
+  color: #fff;
+  border-color: #ff3030;
+  box-shadow: 0 0 24px rgba(255, 0, 0, 0.45);
+  animation: emergency-button-pulse 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes emergency-flash {
+  0%, 100% {
+    border-color: #ff2020;
+    background: rgba(255, 0, 0, 0.025);
+  }
+  50% {
+    border-color: #ff7777;
+    background: rgba(255, 0, 0, 0.13);
+  }
+}
+
+@keyframes emergency-card-pulse {
+  from { box-shadow: 0 0 12px rgba(255, 0, 0, 0.2); }
+  to { box-shadow: 0 0 34px rgba(255, 0, 0, 0.5); }
+}
+
+@keyframes emergency-button-pulse {
+  from { filter: brightness(0.85); }
+  to { filter: brightness(1.15); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .crash-alert-active::after,
+  .crash-alert-active .sos-timer,
+  .crash-alert-active .sos-button {
+    animation: none;
+  }
+}
+
+/* RESQRIDE — HIGH-ALERT VISUAL THEME */
+:root {
+  --emergency-red: #ff1f1f;
+  --emergency-dark: #a80000;
+  --signal-orange: #ff6a00;
+  --signal-yellow: #ffd400;
+  --signal-blue: #075bff;
+  --signal-green: #00d084;
+  --ink-black: #101116;
+}
+
+/* Stronger page contrast */
+body {
+  background: #e5e7eb;
+  color: var(--ink-black);
+}
+
+.app-shell {
+  background: #f1f3f6;
+}
+
+/* Hard-edged emergency command sidebar */
+.sidebar {
+  background: #101116 !important;
+  color: #ffffff !important;
+  border-right: 3px solid var(--emergency-red);
+  border-radius: 0 !important;
+}
+
+.brand-icon {
+  background: var(--emergency-red) !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+}
+
+.nav-item {
+  border-radius: 6px !important;
+  font-weight: 700;
+}
+
+.nav-item.active,
+.nav-item[aria-current="page"] {
+  background: #d90000 !important;
+  color: #ffffff !important;
+}
+
+/* Bold command-center cards */
+.stat-card,
+.panel {
+  background: #ffffff;
+  border: 1px solid #c6cbd4;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 0 #c6cbd4;
+}
+
+.hero-card {
+  background: linear-gradient(120deg, #a80000, #ff1f1f) !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 6px 0 #720000;
+}
+
+.hero-card h1,
+.hero-card h2,
+.hero-card p,
+.hero-card span {
+  color: #ffffff;
+}
+
+/* Angular, high-visibility icon containers */
+.stat-icon,
+.action-icon,
+.brand-icon {
+  border-radius: 8px !important;
+  border: 2px solid currentColor;
+  font-weight: 900;
+}
+
+.stat-icon.purple {
+  background: #e5ddff !important;
+  color: #4b20d9 !important;
+}
+
+.stat-icon.green {
+  background: #baffdf !important;
+  color: #006b43 !important;
+}
+
+.stat-icon.orange {
+  background: #ffe0bd !important;
+  color: #a83b00 !important;
+}
+
+/* Strong, visible buttons */
+button,
+.hero-button,
+.sos-button,
+.safe-button {
+  border-radius: 8px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.2px;
+}
+
+.sos-button {
+  background: var(--emergency-red) !important;
+  color: #ffffff !important;
+  border: 2px solid #a80000 !important;
+  box-shadow: 0 4px 0 #a80000 !important;
+}
+
+.safe-button {
+  background: #007a4d !important;
+  color: #ffffff !important;
+  border: 2px solid #005b39 !important;
+  box-shadow: 0 4px 0 #005b39 !important;
+}
+
+/* Strong warning panel */
+.sos-timer {
+  border: 3px solid var(--emergency-red) !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+.timer-display {
+  color: #d90000 !important;
+  font-weight: 900 !important;
+}
+
+/* Clear status labels */
+.status-pill,
+.hero-tag {
+  border-radius: 5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px;
+}
+
+/* Keep emergency flashing only while the alert is active */
+.crash-alert-active .sos-timer {
+  border-color: var(--emergency-red) !important;
+  box-shadow: 0 0 24px rgba(255, 31, 31, 0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .crash-alert-active::after,
+  .crash-alert-active .sos-timer,
+  .crash-alert-active .sos-button {
+    animation: none !important;
+  }
+}
+
+/* RESQRIDE — Deep Burgundy Colour Correction */
+
+:root {
+  --emergency-red: #8B1E3F;
+  --emergency-dark: #4A1023;
+}
+
+/* Sidebar accent */
+.sidebar {
+  border-right-color: #8B1E3F !important;
+}
+
+.nav-item.active,
+.nav-item[aria-current="page"] {
+  background: linear-gradient(
+    100deg,
+    rgba(139, 30, 63, 0.35),
+    rgba(74, 16, 35, 0.18)
+  ) !important;
+  color: #6F1934 !important;
+}
+
+/* Deep wine-red hero card */
+.hero-card {
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(196, 93, 119, 0.22),
+      transparent 32%
+    ),
+    linear-gradient(
+      120deg,
+      #35101D,
+      #65172F 60%,
+      #8B2946
+    ) !important;
+  box-shadow: 0 6px 0 #2A0B16 !important;
+}
+
+/* Burgundy SOS button */
+.sos-button {
+  background: linear-gradient(
+    100deg,
+    #70182F,
+    #9B2948
+  ) !important;
+  border: 1px solid #531125 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 0 #45101F !important;
+}
+
+.sos-button:hover {
+  background: linear-gradient(
+    100deg,
+    #85203B,
+    #AD3655
+  ) !important;
+}
+
+/* Countdown panel */
+.sos-timer {
+  border-color: #8B1E3F !important;
+}
+
+.sos-timer h3,
+.timer-display {
+  color: #8B1E3F !important;
+}
+
+.warning-indicator {
+  color: #8B1E3F !important;
+}
+
+.warning-dot {
+  background: #A83250 !important;
+  box-shadow: 0 0 10px rgba(139, 30, 63, 0.55) !important;
+}
+
+/* Burgundy emergency screen border */
+.crash-alert-active::after {
+  border-color: #8B1E3F !important;
+  box-shadow: inset 0 0 55px rgba(74, 16, 35, 0.20) !important;
+}
+
+.crash-alert-active .sos-timer {
+  border-color: #8B1E3F !important;
+  box-shadow: 0 0 28px rgba(139, 30, 63, 0.22) !important;
+}
+
+.crash-alert-active .timer-display {
+  color: #70182F !important;
+  text-shadow: none !important;
+}
+
+.crash-alert-active .sos-button {
+  background: #70182F !important;
+  border-color: #4A1023 !important;
+  box-shadow: 0 4px 0 #4A1023 !important;
+}
+
+/* Less harsh emergency pulse */
+@keyframes emergency-flash {
+  0%, 100% {
+    border-color: #70182F;
+    background: rgba(112, 24, 47, 0.015);
+  }
+
+  50% {
+    border-color: #A83250;
+    background: rgba(112, 24, 47, 0.055);
+  }
+}
+
+@keyframes emergency-card-pulse {
+  from {
+    box-shadow: 0 0 12px rgba(112, 24, 47, 0.12);
+  }
+
+  to {
+    box-shadow: 0 0 28px rgba(112, 24, 47, 0.28);
+  }
+}
+
+/* RESQRIDE — Active Alarm Bright Red Glow */
+
+/* Bright red display only when the alarm is active */
+.crash-alert-active .timer-display {
+  color: #ff2020 !important;
+  text-shadow:
+    0 0 5px #ff2020,
+    0 0 12px #ff2020,
+    0 0 24px rgba(255, 32, 32, 0.9) !important;
+  animation: alarm-display-glow 0.8s ease-in-out infinite alternate;
+}
+
+/* Make the emergency countdown panel glow */
+.crash-alert-active .sos-timer {
+  border: 2px solid #ff2020 !important;
+  box-shadow:
+    0 0 12px rgba(255, 32, 32, 0.75),
+    0 0 28px rgba(255, 32, 32, 0.45) !important;
+}
+
+/* Restore the red emergency border pulse */
+.crash-alert-active::after {
+  border-color: #ff2020 !important;
+  box-shadow: inset 0 0 45px rgba(255, 32, 32, 0.22) !important;
+  animation: emergency-flash 0.8s ease-in-out infinite;
+}
+
+@keyframes alarm-display-glow {
+  from {
+    text-shadow: 0 0 5px #ff2020, 0 0 12px #ff2020;
+  }
+  to {
+    text-shadow:
+      0 0 10px #ff2020,
+      0 0 22px #ff2020,
+      0 0 36px rgba(255, 32, 32, 0.95);
+  }
+}
+
+@keyframes emergency-flash {
+  0%, 100% {
+    border-color: #8B1E3F;
+    background: rgba(255, 32, 32, 0.02);
+  }
+  50% {
+    border-color: #ff2020;
+    background: rgba(255, 32, 32, 0.09);
+  }
+}
+
+/* RESQRIDE — Vibrating Emergency Red Display */
+
+/* Remove the flashing red border */
+.crash-alert-active::after {
+  border: none !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
+
+/* Make the countdown display beam and pulse */
+.crash-alert-active .timer-display {
+  color: #ff1717 !important;
+  text-shadow:
+    0 0 5px #ff1717,
+    0 0 12px #ff1717,
+    0 0 25px #ff1717,
+    0 0 42px rgba(255, 23, 23, 0.95) !important;
+  animation: red-display-vibrate 0.16s infinite,
+             red-display-beam 0.7s ease-in-out infinite alternate !important;
+}
+
+/* Red glow around the countdown display only */
+.crash-alert-active .sos-timer {
+  border-color: #8B1E3F !important;
+  box-shadow: none !important;
+}
+
+/* Rapid vibration */
+@keyframes red-display-vibrate {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-1px, 1px); }
+  50%  { transform: translate(1px, -1px); }
+  75%  { transform: translate(-1px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Bright red beam effect */
+@keyframes red-display-beam {
+  from {
+    text-shadow:
+      0 0 4px #ff1717,
+      0 0 10px #ff1717,
+      0 0 18px rgba(255, 23, 23, 0.8);
+  }
+  to {
+    text-shadow:
+      0 0 8px #ff1717,
+      0 0 22px #ff1717,
+      0 0 38px #ff1717,
+      0 0 55px rgba(255, 23, 23, 0.95);
+  }
+}
+
+/* RESQRIDE — Full Display Red Emergency Pulse */
+
+.crash-alert-active {
+  animation: full-screen-red-pulse 0.65s ease-in-out infinite alternate !important;
+}
+
+.crash-alert-active::after {
+  border: none !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
+
+@keyframes full-screen-red-pulse {
+  from {
+    background-color: rgba(255, 0, 0, 0.04);
+    box-shadow: inset 0 0 35px rgba(255, 0, 0, 0.18);
+  }
+  to {
+    background-color: rgba(255, 0, 0, 0.22);
+    box-shadow:
+      inset 0 0 70px rgba(255, 0, 0, 0.55),
+      inset 0 0 130px rgba(255, 0, 0, 0.25);
+  }
+}
+
+.crash-alert-active .timer-display {
+  color: #ff1010 !important;
+  animation: display-red-vibrate 0.12s infinite alternate !important;
+  text-shadow:
+    0 0 8px #ff1010,
+    0 0 22px #ff1010,
+    0 0 42px #ff1010 !important;
+}
+
+@keyframes display-red-vibrate {
+  from { transform: translateX(-2px); }
+  to   { transform: translateX(2px); }
+}
+
+/* RESQRIDE — Emergency Panel Layout Fix */
+
+.emergency-location-panel {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 20px 0;
+  padding: 24px;
+  overflow-wrap: anywhere;
+  border: 1px solid #8B1E3F;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #35101D;
+  box-shadow: 0 8px 24px rgba(74, 16, 35, 0.10);
+}
+
+.emergency-location-panel h3 {
+  margin: 12px 0;
+  font-size: 22px;
+  color: #70182F;
+}
+
+.emergency-location-panel p {
+  margin: 12px 0;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.emergency-location-panel a {
+  display: inline-block;
+  max-width: 100%;
+  margin: 8px 0;
+  color: #70182F;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.emergency-location-panel .safe-button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 18px;
+}
+
+/* Prevent the dashboard from stretching beyond the screen */
+.app-shell {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+.main-content,
+.page-content,
+.lower-grid,
+.panel {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .emergency-location-panel {
+    padding: 18px;
+  }
+
+  .emergency-location-panel h3 {
+    font-size: 19px;
+  }
+}
